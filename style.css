@@ -5,36 +5,35 @@ body {
   background-size: cover;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
-.overlay {
+#messageImage {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* space between image and button */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  border: none;
+  box-shadow: none;
+  z-index: 1;
 }
 
 #messageBtn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
+  z-index: 2;
 }
 
 .envelope-icon {
   width: 120px;
   height: auto;
   cursor: pointer;
-}
-
-#messageImage {
-  max-width: 600px;
-  width: 90vw;
-  height: auto;
-  border: 2px solid white;
-  box-shadow: 0 0 10px black;
 }
