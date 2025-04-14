@@ -70,7 +70,7 @@ body {
 /* Close button (top-right of message image) */
 #closeBtn {
   position: absolute;
-  top: 20px;
+  top: 100px;
   right: 20px;
   background: none;
   border: none;
@@ -82,9 +82,4 @@ body {
 .close-icon {
   width: 48px;
   height: 48px;
-}
-
-.close-icon {
-  width: 32px;
-  height: 32px;
 }
