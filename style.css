@@ -12,7 +12,7 @@ body {
   position: absolute;
   bottom: 10%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-10%);
 }
 
 #messageBtn {
