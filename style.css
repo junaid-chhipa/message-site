@@ -70,7 +70,7 @@ body {
 /* Close button (top-right of message image) */
 #closeBtn {
   position: absolute;
-  top: 160px;
+  top: 165px;
   right: 30px;
   background: none;
   border: none;
