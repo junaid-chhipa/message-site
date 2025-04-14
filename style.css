@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overlay {
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#messageBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.envelope-icon {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+
+#messageImage {
+  max-width: 90%;
+  height: auto;
+  border: 2px solid white;
+  box-shadow: 0 0 10px black;
+  margin-top: 20px;
+}
