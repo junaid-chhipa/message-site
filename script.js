@@ -1,25 +1,19 @@
+const messageWrapper = document.getElementById("messageWrapper");
 const messageImg = document.getElementById("messageImage");
 const messageBtn = document.getElementById("messageBtn");
 const closeBtn = document.getElementById("closeBtn");
 
 messageBtn.addEventListener("click", () => {
-  // Show the message image and close button
-  messageImg.hidden = false;
-  closeBtn.hidden = false;
-
-  // Play fade-in animation
-  messageImg.classList.add("fade-in");
-  messageImg.classList.remove("fade-out");
+  messageWrapper.hidden = false;
+  messageWrapper.classList.remove("fade-out");
+  messageWrapper.classList.add("fade-in");
 });
 
 closeBtn.addEventListener("click", () => {
-  // Play fade-out animation
-  messageImg.classList.remove("fade-in");
-  messageImg.classList.add("fade-out");
+  messageWrapper.classList.remove("fade-in");
+  messageWrapper.classList.add("fade-out");
 
-  // Wait for the animation to finish before hiding elements
   setTimeout(() => {
-    messageImg.hidden = true;
-    closeBtn.hidden = true;
-  }, 500); // Match this to your CSS animation duration
+    messageWrapper.hidden = true;
+  }, 500); // This matches the CSS animation duration
 });
