@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   position: relative;
 }
@@ -13,16 +13,16 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  height: 100dvh;
+  object-fit: contain;
   border: none;
   box-shadow: none;
   z-index: 1;
 }
 
 #messageBtn {
-  position: absolute;
-  bottom: 5%;
+  position: fixed;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   background: none;
