@@ -32,7 +32,7 @@ body {
 }
 
 #messageImage {
-  width: 500px;
+  width: 100%;
   height: auto;
   border: 2px solid white;
   box-shadow: 0 0 10px black;
