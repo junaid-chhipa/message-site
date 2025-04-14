@@ -12,8 +12,7 @@ closeBtn.addEventListener("click", () => {
   messageWrapper.classList.remove("visible");
   messageWrapper.classList.add("hidden");
 
-  // Only hide after fade-out finishes
   setTimeout(() => {
     messageWrapper.style.display = "none";
-  }, 500);
+  }, 500); // match fadeOut duration
 });
