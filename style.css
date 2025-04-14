@@ -17,7 +17,7 @@ body {
   object-fit: contain;
   border: none;
   box-shadow: none;
-  z-index: 1;
+  z-index: 3;
 }
 
 #messageBtn {
