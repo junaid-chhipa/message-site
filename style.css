@@ -37,6 +37,17 @@ body {
   display: block;
 }
 
+/* Fade animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
 /* Envelope Button */
 #messageBtn {
   position: fixed;
