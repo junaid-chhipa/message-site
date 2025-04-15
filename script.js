@@ -5,7 +5,6 @@ const closeBtn = document.getElementById("closeBtn");
 messageBtn.addEventListener("click", () => {
   messageContainer.classList.remove("hidden");
   messageContainer.classList.add("visible");
-  messageWrapper.style.display = "flex";
 });
 
 closeBtn.addEventListener("click", () => {
