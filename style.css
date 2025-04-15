@@ -31,10 +31,11 @@ body {
 
 /* Message image (full screen) */
 #messageImage {
-  width: 100vw;
-  height: 100dvh;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
   display: block;
+  position: relative;
+  z-index: 3;
 }
 
 /* Fade animations */
