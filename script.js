@@ -1,18 +1,16 @@
-const messageWrapper = document.getElementById("messageWrapper");
+const messageContainer = document.getElementById("messageContainer");
 const messageBtn = document.getElementById("messageBtn");
 const closeBtn = document.getElementById("closeBtn");
 
 messageBtn.addEventListener("click", () => {
-  messageWrapper.classList.remove("hidden");
-  messageWrapper.classList.add("visible");
+  messageContainer.classList.remove("hidden");
+  messageContainer.classList.add("visible");
   messageWrapper.style.display = "flex";
 });
 
 closeBtn.addEventListener("click", () => {
-  messageWrapper.classList.remove("visible");
-  messageWrapper.classList.add("hidden");
-
+  messageContainer.classList.remove("visible");
   setTimeout(() => {
-    messageWrapper.style.display = "none";
-  }, 500); // match fadeOut duration
+    messageContainer.classList.add("hidden");
+  }, 500); // match CSS transition
 });
