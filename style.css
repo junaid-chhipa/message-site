@@ -38,6 +38,11 @@ body {
   z-index: 3;
 }
 
+.message-container {
+  position: relative;
+  display: inline-block;
+}
+
 /* Fade animations */
 @keyframes fadeIn {
   from { opacity: 0; }
