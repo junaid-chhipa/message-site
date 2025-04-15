@@ -9,8 +9,9 @@ messageBtn.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () => {
-  messageWrapper.classList.remove("visible");
+  messageWrapper.classList.add("fading-out");
   setTimeout(() => {
+    messageWrapper.classList.remove("visible", "fading-out");
     messageWrapper.classList.add("hidden");
   }, 500);
 });
