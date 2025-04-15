@@ -34,12 +34,17 @@ body {
 
 .message-wrapper.visible {
   display: flex;
+  animation: fadeIn 0.5s ease-in forwards;
   opacity: 1;
 }
 
 .message-wrapper.hidden {
   display: none;
   opacity: 0;
+}
+
+.message-wrapper.fading-out {
+  animation: fadeOut 0.5s ease-out forwards;
 }
 
 #messageImage {
