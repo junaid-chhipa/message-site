@@ -11,15 +11,7 @@ body {
 .message-container {
   position: relative;
   display: inline-block;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 3;
-}
-
-.message-container.visible {
-  opacity: 1;
-  pointer-events: auto;
+  z-index: 6;
 }
 
 #messageImage {
@@ -42,11 +34,12 @@ body {
 
 .message-wrapper.visible {
   display: flex;
-  animation: fadeIn 0.5s ease-in forwards;
+  opacity: 1;
 }
 
 .message-wrapper.hidden {
-  animation: fadeOut 0.5s ease-out forwards;
+  display: none;
+  opacity: 0;
 }
 
 #messageImage {
