@@ -16,19 +16,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Message Wrapper -->
- <div class="message-wrapper" id="messageWrapper" hidden>
-  <div class="message-container">
+  <!-- Message Container holding image and close button -->
+  <div class="message-container" id="messageContainer" hidden>
     <img id="messageImage" src="message.jpg" alt="Message">
     <button id="closeBtn">
       <img src="close.png" alt="Close" class="close-icon">
     </button>
   </div>
+
+  <!-- Envelope icon remains outside the message container -->
   <button id="messageBtn">
     <img src="envelope.png" alt="Open Message" class="envelope-icon">
   </button>
-</div>
 
   <script src="script.js"></script>
 </body>
