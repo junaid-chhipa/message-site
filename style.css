@@ -8,6 +8,26 @@ body {
   position: relative;
 }
 
+.message-container {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 3;
+}
+
+.message-container.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#messageImage {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  display: block;
+}
 .message-wrapper {
   display: none;
   position: fixed;
@@ -29,18 +49,11 @@ body {
   animation: fadeOut 0.5s ease-out forwards;
 }
 
-/* Message image (full screen) */
 #messageImage {
   width: 100%;
   height: auto;
   display: block;
   position: relative;
-  z-index: 3;
-}
-
-.message-container {
-  position: relative;
-  display: inline-block;
   z-index: 3;
 }
 
@@ -71,7 +84,6 @@ body {
 .envelope-icon {
   width: 120px;
   height: auto;
-  cursor: pointer;
 }
 
 /* Close button (top-right of message image) */
